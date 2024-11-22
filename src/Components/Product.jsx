@@ -5,6 +5,7 @@ import { addCart } from "../redux/action";
 import { useParams, NavLink } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
+//Arrow function 
 export const Product = () =>{
    const {id} = useParams();
    const[product, setProduct]  = useState([]);
@@ -26,6 +27,8 @@ export const Product = () =>{
 
    })
 
+
+      //loading function 
      const Loading =() =>{
       return(
          <>
@@ -44,6 +47,7 @@ export const Product = () =>{
          </>
       )
      }
+      //Show Product Function
      const ShowProduct = () =>{
       return(
          <>
@@ -68,6 +72,7 @@ export const Product = () =>{
          </>
       )
      }
+   //Return of the Arrow Function i.e Product
      return (
         <div>
             <div className="container py-5">
