@@ -15,7 +15,8 @@ export const Products = () => {
             const response = await fetch("https://fakestoreapi.com/products");
             if (componentMounted) {
                 setData(await response.clone().json());
-                setFliter(await response.json());
+                
+                (await response.json());
                 setLoading(false);
                 console.log(fliter)
             }
